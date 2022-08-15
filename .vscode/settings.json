@@ -1,0 +1,47 @@
+{
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/.venv": true,
+        "**/.git": true,
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/__pycache__": true,
+        "**/.venv": true,
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/__pycache__": true,
+        ".venv/": true,
+    },
+    "[python]": {
+        "editor.defaultFormatter": null,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "flake8",
+    "python.linting.flake8Args": [
+        "--config=${workspaceFolder}/.flake8"
+    ],
+    "python.linting.pycodestyleEnabled": false,
+    "python.languageServer": "Pylance",
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#ffffff",
+        "terminal.background": "#000000"
+    }
+}

@@ -1,0 +1,32 @@
+[flake8]
+# Base flake8 configuration:
+show-source = True
+statistics = False
+enable-extensions = G
+exclude = .git,
+        .github,
+        .vscode,
+        __pycache__,
+        database,
+        image_store,
+        .gitignore,
+        static,
+        trained_model
+per-file-ignores = */__init__.py: F401 ,F403       
+
+# Plugins:
+accept-encodings = utf-8
+max-complexity = 10
+max-line-length = 120
+inline-quotes = double
+
+# Self settings:
+
+# Exclude some pydoctest checks globally:
+ignore = D103, D401
+
+
+[isort]
+line_length=120
+default_section = THIRDPARTY
+sections = STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER

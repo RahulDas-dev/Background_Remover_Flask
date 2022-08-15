@@ -1,0 +1,10 @@
+# Install dependencies
+-r requirements.txt
+
+# Install Development Dependencies
+pyclean
+black
+flake8
+flake8-quotes
+flake8-builtins
+pep8-naming
